@@ -1,0 +1,79 @@
+name: medicine_dispenser
+description: Smart Medicine Dispenser Dashboard App
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase core — REQUIRED for all Firebase services
+  firebase_core: ^2.27.0
+
+  firebase_database: ^10.5.7
+
+  # Firebase Authentication — for login/signup
+  firebase_auth: ^4.17.0
+
+  # Cloud Firestore — real-time database
+  cloud_firestore: ^4.15.0
+
+  # Firebase Cloud Messaging — push notifications
+  firebase_messaging: ^14.7.19
+
+  # Local notifications — show alerts even when app is in foreground
+  flutter_local_notifications: ^17.2.1
+
+  # ── NEW: Android AlarmManager ──────────────────────────────────────────
+  # Uses Android's native AlarmManager — fires even when app is killed
+  # or phone is in doze/sleep mode. Same system used by clock apps.
+  android_alarm_manager_plus: ^5.0.0
+
+  # ── NEW: Permission Handler ────────────────────────────────────────────
+  # Requests "Alarms & Reminders" permission on Android 12+ at runtime.
+  # Without this, exact alarms will crash with a SecurityException.
+  permission_handler: ^11.3.1
+
+  # Icons pack
+  cupertino_icons: ^1.0.6
+
+  # Format dates nicely (e.g., "2 minutes ago")
+  timeago: ^3.6.1
+
+  # Shared preferences — save small data locally (alarm metadata)
+  shared_preferences: ^2.2.3
+
+  # Google Fonts — nice typography
+  google_fonts: ^6.2.1
+
+  # Lottie animations — for nice loading/empty state animations
+  lottie: ^3.1.0
+
+  # Flutter SVG (optional — for icons)
+  flutter_svg: ^2.0.10+1
+
+  # Intl — for date/time formatting
+  intl: ^0.19.0
+
+  audioplayers: ^6.0.0
+
+  just_audio: ^0.9.40 
+
+  http: ^1.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/sounds/notification.mp3
