@@ -1,4 +1,4 @@
-# Bit_Veda_VVCE 💊
+# Bit_Veda_VVCE 
 
 ## Intelligent Medication Management System
 
@@ -223,18 +223,6 @@ Bit_Veda is an innovative IoT-based healthcare application that combines a smart
 3. Confirm medication intake in the app
 4. View your adherence dashboard
 
-#### Medication Management
-```dart
-// Example: Adding a medication in the app
-var medication = Medication(
-  name: 'Aspirin',
-  dosage: '500mg',
-  frequency: 'Twice daily',
-  startDate: DateTime.now(),
-  endDate: DateTime.now().add(Duration(days: 30)),
-  schedule: ['08:00 AM', '08:00 PM'],
-);
-```
 
 ### For Healthcare Providers
 
